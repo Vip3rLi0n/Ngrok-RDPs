@@ -3,12 +3,10 @@
 
 ## How To Use?
 ``` 
-## First.
 $ Click on "Fork" to create a copy of the "Ngrok-RDPs" repository in your own GitHub account.
 $ Click on "Settings" => "Secrets" => "New repository secret".
 $ In the "Name" field, type "NGROK_AUTH_TOKEN".
 
-## Second.
 $ Create an account on ngrok.com. (SKIP THIS IF ALREADY OWN)
 $ Find Your Authoken on NGROKs dashboard and copy it to your clipboard.
 $ Paste the authtoken from NGROKs dashboard into the "Value" field on GitHub, and then click "Add Secret".
