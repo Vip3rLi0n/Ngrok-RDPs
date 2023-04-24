@@ -1,7 +1,7 @@
 ## Ngrok-RDPs
 - Perform With RDPs Using Ngrok [Forwarding]
 ## What is this?
-- RDP using ngrok is a technique used to remotely access a computer via a public internet network with the help of the Ngrok network addressing protocol routing. Ngrok will create a secure tunnel between the client (the computer that wants to access) and the Ngrok server connected to the public internet. Once the tunnel is established by Ngrok, clients can establish an RDP connection to the Ngrok IP address provided by the Ngrok server and connect to the device via the public internet network.
+- RDPs using ngrok is a technique used to remotely access a computer via a public internet network with the help of the Ngrok network addressing protocol routing. Ngrok will create a secure tunnel between the client (the computer that wants to access) and the Ngrok server connected to the public internet. Once the tunnel is established by Ngrok, clients can establish an RDP connection to the Ngrok IP address provided by the Ngrok server and connect to the device via the public internet network.
 ## How To Use?
 ``` 
 $ Click on "Fork" to create a copy of the "Ngrok-RDPs" repository in your own GitHub account.
