@@ -12,7 +12,7 @@ jobs:
     - name: Download ngrok
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/ngrok.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/parimalam.exe -OutFile parimalam.exe
         Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/winrar.exe -OutFile winrar.exe
 
     - name: Extract ngrok Files
@@ -31,10 +31,10 @@ jobs:
         copy winrar.exe C:\Users\Public\Desktop\winrar.exe
         
     - name: Create Tunnel
-      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 1337"'
 
     - name: Connect to RDPs [By @Pari_Malam]
-      run: cmd /c start.bat
+      run: cmd /c parimalam.exe
 
     - name: Install Winrar
       run: cmd /c C:\Users\Public\Desktop\winrar.exe winrar.exe /s
